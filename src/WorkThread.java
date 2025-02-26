@@ -24,10 +24,10 @@ class WorkThread extends Thread {
 
             // BEGIN
 
-            // synchronized (daugintojas) {
+            synchronized (daugintojas) {
                 daugintojas.put(randomNumberA, randomNumberB);
                 value = daugintojas.process();
-            // }
+            }
 
             // END
 
